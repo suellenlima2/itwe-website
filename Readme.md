@@ -26,7 +26,7 @@ A atividade consiste em desenvolver um site parcialmente funcional, utilizando a
 O projeto está organizado da seguinte forma:
 
 ```
-pizzaria-website/
+itwe-website/
 │
 ├── index.html        # Página principal do site
 ├── css/
@@ -44,7 +44,7 @@ pizzaria-website/
 
 1. Clone este repositório:
     ```sh
-    git clone https://github.com/usuario/pizzaria-website.git
+    git clone https://github.com/usuario/itwe-website.git
     ```
 2. Navegue até o diretório do projeto:
     ```sh
