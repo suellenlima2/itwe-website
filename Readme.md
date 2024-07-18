@@ -48,7 +48,7 @@ pizzaria-website/
     ```
 2. Navegue até o diretório do projeto:
     ```sh
-    cd pizzaria-website
+    cd itwe-website
     ```
 3. Abra o arquivo `index.html` em seu navegador preferido.
 
