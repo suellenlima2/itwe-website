@@ -44,7 +44,7 @@ itwe-website/
 
 1. Clone este repositório:
     ```sh
-    git clone https://github.com/usuario/itwe-website.git
+    git clone https://github.com/suellenlima2/itwe-website.git
     ```
 2. Navegue até o diretório do projeto:
     ```sh
