@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.png">
     <title>QuickCrave</title>
-    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -14,6 +15,7 @@
 </head>
 
 <body class="background">
+      <!-- Sidebar Menu -->
     <aside class="menu">
         <div class="background menu-content">
             <h1>
@@ -23,8 +25,9 @@
                 <ul>
                     <li><a href="#intro">INICIO</a></li>
                     <li><a href="#menu">CARDÁPIO</a></li>
-                    <li><a href="#quality">SOBRE</a></li>
-                    <li><a href="#contact">INFORMAÇÕES</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#contact-form">CONTATE-NOS</a></li>
+                    <li><a href="#information">INFORMAÇÕES</a></li>
 
                 </ul>
             </nav>
@@ -33,6 +36,8 @@
             </a>
             </div>
     </aside>
+
+      <!-- Section Intro -->
     <section id="intro" class="intro background section-site">
         <div class="main-content intro"> </div>
             <div class="content">
@@ -47,14 +52,17 @@
             <img src="assets/images/pizza12.png" alt="intro-food">
         </div>
     </section>
-    <section id="menu" class="white-background section-site">
+
+    <!-- Section Menu -->
+    <section id="menu" class="gray-background section-site">
         <div class="cards">
+              <!-- Cards -->
             <div class="card">
                 <img src="assets/images/pizza1.jpg" alt="Produto 1">
                 <h3>MARGHERITA</h3>
                 <p> Clássica pizza italiana com molho de tomate, mozzarella fresca e manjericão.</p>
                 <span>R$ 45,00</span>
-                <a class="button-buy" href="https://api.whatsapp.com/send?phone=5582988615105"
+                <a class="button-buy" href="https://api.whatsapp.com/send?phone=5582988615105" 
                 target="_blank">Comprar</a>
             </div>
             <div class="card">
@@ -100,8 +108,9 @@
         </div>
     </section>
 
-    <section id="quality" class="background image-quality">
-        <div class="main-content quality">
+    <!-- Section About -->
+    <section id="about" class="background image-about">
+        <div class="main-content about">
             <h2>Nosso compromisso com a qualidade. Melhor <strong>pizza</strong> da cidade!</h2>
             <p> <i> Nossa comida é fresca e simples. As pizzas são elaboradas com massas preparadas todas as manhãs.
                     Todos os recheios são cortados e preparadas diariamente em nossas lojas. 
@@ -110,34 +119,55 @@
                     sua comida será preparada por pessoas que se orgulham de nossa marca e do que defendemos.</i></p>
         </div>
         <div>
-            <img src="assets/images/quality.png" alt="image-quality">
+            <img src="assets/images/about.png" alt="image-about">
         </div>
     </section>
-    <section id="contact" class="background contact">
-        <div class="main-content contact-content">
+
+    <!-- Section Contact -->
+    <section id="contact-form">
+        <h2>ENTRE EM CONTATO CONOSCO AGORA</h2>
+        <p>PREENCHA NOSSO FORMULÁRIO DE CONTATO PARA SUAS DÚVIDAS/SUGESTÕES!</p>
+    
+        <form action="#" method="post">
+            <div class="form-section">
+                <h3>INFORMAÇÃO</h3>
+                <input type="text" name="name" placeholder="SEU NOME" required>
+                <input type="tel" name="phone" placeholder="SEU TELEFONE" required>
+                <input type="email" name="email" placeholder="SEU E-MAIL" required>
+                <textarea name="address" placeholder="FALE-NOS SOBRE SUAS DÚVIDAS/SUGESTÕES"></textarea>
+            </div>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+
+    <!-- Section Information -->
+    <section id="information" class="background information">
+        <div class="main-content information-content">
             <div class="column links-column">
                 <ul>
-                    <li><a href="#intro">INICIO</a></li>
+                    <li><a href="#intro">INICIO</a></li>    
                     <li><a href="#menu">CARDÁPIO</a></li>
-                    <li><a href="#quality">SOBRE</a></li>
-                    <li><a href="#contact">INFORMAÇÕES</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#information">INFORMAÇÕES</a></li>
+                    <li><a href="#contact-form">CONTATE-NOS</a></li>
                 </ul>
             </div>
             <div class="column subscribe-column">
                 <h3>FIQUE POR DENTRO DAS NOVIDADES</h3>
                 <div class="subscribe-container">
-                    <input type="email" placeholder="Digite seu e-mail">
-                    <button type="button">Subscrever</button>
+                    <input type="email" id="email-input" placeholder="Digite seu e-mail">
+                    <button type="button" id="subscribe-button">Subscrever</button>
                 </div>
             </div>
+            
             <div class="column hours-column">
                 <h3>HORÁRIO DE FUNCIONAMENTO</h3>
                 <p>Segunda a Quinta: 10:30 AM - 8:00 PM</p>
                 <p>Sexta a Domingo: 10:30 AM - 11:30 PM</p>
             </div>
-            <div class="column contact-column">
+            <div class="column information-column">
                 <h3>CONTATO</h3>
-                <p>Telefone: (82) 98861-5105</p>
+                <p>Tel: (82) 98861-5105</p>
                 <a href="https://api.whatsapp.com/send?phone=5582988615105" target="_blank">
                     <img src="assets/images/whatsapp-icon.png" alt="WhatsApp">
                 </a>
@@ -147,5 +177,15 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="background footer">
+        <div class="main-content footer-content">
+            <p>© 2024 QuickCrave. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+
 </body>
 </html>
